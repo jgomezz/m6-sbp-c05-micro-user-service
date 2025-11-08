@@ -29,6 +29,12 @@ docker exec -u root -it jenkins bash
 apt update
 apt install maven -y
 ```
+### Paso 7: Donde estan instalados Java, Maven y git en el contenedor de Jenkins
+```
+dirname $(dirname $(readlink -f $(which java)))
+dirname $(dirname $(readlink -f $(which mvn)))
+which git
 
-
+```
+    
 
