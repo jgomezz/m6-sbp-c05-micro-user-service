@@ -18,3 +18,17 @@ Ingresa a  http://localhost:8080/
 ```
 docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
+### Paso 5: Completar la configuración inicial      
+- Ingresa la contraseña obtenida en el paso anterior.
+- Selecciona "Instalar los complementos recomendados".
+- Crea el primer usuario administrador.
+
+### Paso 6: Installar maven en el Contenedor de Jenkins 
+```
+docker exec -u root -it jenkins bash
+apt update
+apt install maven -y
+```
+
+
+
