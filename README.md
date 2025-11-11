@@ -1,5 +1,6 @@
-## Instalación de Jenkins in Docker
+# Instalación de Jenkins in Docker
 
+## PARTE 1
 
 ### Paso 1: Descargar la imagen oficial de Jenkins
 ```
@@ -91,3 +92,10 @@ pipeline {
 - Hacer clic en "Build Now"
 - Verificar que el pipeline se ejecute correctamente
 - Ver los logs de la ejecución
+
+
+## PARTE 2   : Crear un pipeline con Jenkinsfile desde un repositorio GitHub
+
+### Paso 1: Crear un nuevo pipeline y configurarlo 
+
+<img src="images/pipeline_scm.png" alt="Jenkins Pipeline SCM" width="600"/>
