@@ -6,3 +6,4 @@ com/tecsup/app/micro/user/mapper/UserMapper.class
 com/tecsup/app/micro/user/UserServiceApplication.class
 com/tecsup/app/micro/user/mapper/UserMapperImpl.class
 com/tecsup/app/micro/user/repository/UserRepository.class
+com/tecsup/app/micro/user/dto/User$UserBuilder.class
