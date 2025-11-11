@@ -145,3 +145,10 @@ pipeline {
 ```
 
 ### Paso 3: Ejecutar el pipeline
+
+## TAREA
+
+- Crear un repositorio unico para el microservice product-service
+- Crear un Jenkinsfile con las etapas de Clone, Compile, Test y Package
+- Configurar un pipeline en Jenkins que apunte al repositorio creado
+- Ejecutar el pipeline y verificar que todas las etapas se ejecuten correctamente
