@@ -8,6 +8,12 @@ pipeline {
                 checkout scm
             }
         }
+        stage('Checkout') {
+            steps {
+                echo 'Compile the project'
+                sh 'mvn clean compile'
+            }
+        }
     }
 
 }
