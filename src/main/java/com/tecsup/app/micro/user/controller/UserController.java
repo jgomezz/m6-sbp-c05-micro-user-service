@@ -33,5 +33,6 @@ public class UserController {
         return ResponseEntity.ok(userService.getUserById(id));
     }
 
-    // TO DO other endpoints (create, update, delete)
+    // Demo
+
 }
