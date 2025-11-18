@@ -10,6 +10,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.Matchers.hasSize;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -29,13 +30,13 @@ class UserControllerTest {
 
     @Test
     void getAllUsers() throws Exception {
-        //int NRO_RECORD = 73;
+        int NRO_RECORD = 6;
         final int ID_FIRST_RECORD = 1;
 
         this.mockMvc.perform(get("/api/users"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
-                //		    .andExpect(jsonPath("$", hasSize(NRO_RECORD)))
+                .andExpect(jsonPath("$", hasSize(NRO_RECORD)))
                 .andExpect(jsonPath("$[0].id", is(ID_FIRST_RECORD)));
 
     }
@@ -45,7 +46,6 @@ class UserControllerTest {
 
         String NAME = "Juan Pérez";
         String EMAIL = "juan.perez@example.com";
-
 
         this.mockMvc.perform(get("/api/users/1"))
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
